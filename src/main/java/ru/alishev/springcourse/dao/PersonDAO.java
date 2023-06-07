@@ -6,9 +6,6 @@ import ru.alishev.springcourse.models.Person;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author Neil Alishev
- */
 @Component
 public class PersonDAO {
     private static int PEOPLE_COUNT;
@@ -18,9 +15,7 @@ public class PersonDAO {
         people = new ArrayList<>();
 
         people.add(new Person(++PEOPLE_COUNT, "Tom", 23, "tom@mail.ru"));
-        people.add(new Person(++PEOPLE_COUNT, "Bob", 23, "bob@mail.ru"));
-        people.add(new Person(++PEOPLE_COUNT, "Mike", 23, "mike@yahoo.com"));
-        people.add(new Person(++PEOPLE_COUNT, "Katy", 23, "katu@gmail.com"));
+
     }
 
     public List<Person> index() {
